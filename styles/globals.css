@@ -13,3 +13,6 @@ body{
 .iconsAnimation{
     @apply hover:bg-opacity-10 rounded-full flex items-center justify-center cursor-pointer w-9 h-9 hover:bg-[#1d9bf0]
 }
+.navHover{
+    @apply hover:bg-opacity-50 rounded-md w-20 flex items-center justify-center cursor-pointer  hover:bg-white
+}

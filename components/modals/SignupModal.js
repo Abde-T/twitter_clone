@@ -67,7 +67,7 @@ export default function SignupModal() {
     <>
       <button
         className="bg-white text-black
-        w-[160px] rounded-full h-[40px] hover:bg-[#cbd2d7]
+        w-[160px] rounded-full h-[40px] hover:text-white hover:bg-[#242424]
         "
         onClick={() => dispatch(openSignupModal())}
       >
@@ -86,7 +86,7 @@ export default function SignupModal() {
         >
           <div className="w-[90%] mt-8 flex flex-col">
             <button
-              className="bg-white text-black w-full font-bold
+              className="bg-yellow-300 text-black w-full font-bold
                 text-lg p-2 rounded-md
                 "
                 onClick={handleGuestSignIn}
@@ -94,7 +94,7 @@ export default function SignupModal() {
               Sign In as Guest
             </button>
             <h1 className="text-center mt-4 font-bold text-lg">or</h1>
-            <h1 className="mt-4 font-bold text-4xl">Create your account</h1>
+            <h1 className="mt-4 font-bold text-4xl text-yellow-300">Create your account</h1>
             <input
               placeholder="Full Name"
               className="h-10 mt-8 rounded-md bg-transparent border border-gray-700 p-6"
@@ -115,7 +115,7 @@ export default function SignupModal() {
             />
 
             <button
-              className="bg-white text-black w-full font-bold
+              className="bg-yellow-300 text-black w-full font-bold
                 text-lg p-2 mt-8 rounded-md
                 "
               onClick={handleSingUp}

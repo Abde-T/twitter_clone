@@ -3,8 +3,8 @@ import SignupModal from "./modals/SignupModal";
 
 export default function BottomBanner() {
   return (
-    <div className="flex xl:space-x-[200px] justify-center items-center fixed w-full h-[80px] bg-[#1d9bf0] bottom-0">
-      <div className="hidden xl:inline text-white">
+    <div className="flex xl:space-x-[200px] justify-center items-center fixed w-full h-[80px] bg-yellow-300 bottom-0">
+      <div className="hidden xl:inline text-[#242424]">
         <h1 className="text-2xl font-bold">Don't miss what's happening</h1>
         <span className="text-[18px] font-normal">
           People on Twitter are the first to know.

@@ -70,7 +70,7 @@ export default function Tweet({ data, id }) {
   return (
     <div
       onClick={() => router.push("/" + id)}
-      className="border-b border-gray-700 cursor-pointer"
+      className="border rounded-xl my-8 border-yellow-300 cursor-pointer"
     >
       <TweetHeader
         username={data?.username}
@@ -132,7 +132,7 @@ export default function Tweet({ data, id }) {
 
 export function TweetHeader({ username, name, timestamp, text, photoUrl, image }) {
   return (
-    <div className="flex space-x-3 p-3 border-gray-700">
+    <div className="flex space-x-3 p-3 border-yellow-300">
       <img className="w-11 h-11 rounded-full object-cover" src={photoUrl} />
       <div>
         <div className="text-gray-500 flex items-center space-x-2 mb-1">
@@ -145,7 +145,7 @@ export function TweetHeader({ username, name, timestamp, text, photoUrl, image }
         <span>{text}</span>
 
         {image && <img
-        className="object-cover border border-gray-700 rounded-md mt-3 max-h-80"
+        className="object-cover border border-yellow-300 rounded-md mt-3 max-h-80"
         src={image} />}
       </div>
     </div>

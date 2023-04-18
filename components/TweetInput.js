@@ -72,7 +72,7 @@ export default function TweetInput() {
   }
 
   return (
-    <div className="flex space-x-3 p-3 border-b border-gray-700">
+    <div className="flex space-x-3 p-3 border-b py-8 border-yellow-300">
       <img
         className="w-11 h-11 rounded-full object-cover"
         src={user.photoUrl || "/assets/twitter-logo.png"}
@@ -110,39 +110,39 @@ export default function TweetInput() {
           </div>
         )}
 
-        <div className="flex justify-between border-t border-gray-700 pt-4">
+        <div className="flex justify-between border-t border-yellow-300 pt-4">
           {/* ICNONS DIV */}
           <div className="flex space-x-0">
             <div
             onClick={() => filePickerRef.current.click()}
             className="iconAnimation">
-              <PhotographIcon className="h-[22px] text-[#1d9bf0] m-2" />
+              <PhotographIcon className="h-[22px] text-gray-200 m-2" />
             </div>
             <input 
             ref={filePickerRef}
             onChange={addImagetoTweet}
             className="hidden" type="file" />
             <div className="iconAnimation">
-              <ChartBarIcon className="h-[22px] text-[#1d9bf0] m-2" />
+              <ChartBarIcon className="h-[22px] text-gray-200 m-2" />
             </div>
             <div className="iconAnimation">
-              <EmojiHappyIcon className="h-[22px] text-[#1d9bf0] m-2" />
+              <EmojiHappyIcon className="h-[22px] text-gray-200 m-2" />
             </div>
             <div className="iconAnimation">
-              <CalendarIcon className="h-[22px] text-[#1d9bf0] m-2" />
+              <CalendarIcon className="h-[22px] text-gray-200 m-2" />
             </div>
             <div className="iconAnimation">
-              <LocationMarkerIcon className="h-[22px] text-[#1d9bf0] m-2" />
+              <LocationMarkerIcon className="h-[22px] text-gray-200 m-2" />
             </div>
           </div>
 
           <button
           onClick={sendTweet}
           disabled={!text && !image}
-          className="bg-[#1d9bf0] rounded-full px-4 py-1.5
+          className="bg-yellow-300 text-[#242424] rounded-full px-4 py-1.5
           disabled:opacity-50
           ">
-            Tweet
+            Post
           </button>
         </div>
       </div>)}

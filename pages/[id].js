@@ -34,7 +34,7 @@ export default function CommentsPage({ tweetData }) {
   return (
     <div>
       <div
-        className="bg-black min-h-screen text-[#E7E9EA] 
+        className="bg-[#242424] min-h-screen text-[#E7E9EA] 
     max-w-[1400px] mx-auto flex
     
     "
@@ -42,25 +42,25 @@ export default function CommentsPage({ tweetData }) {
         <Sidebar />
         <div
           className="sm:ml-16 xl:ml-[350px] max-w-2xl flex-grow
-        border-gray-700 border-x
+        border-yellow-300 border-x
         "
         >
           <div
             className="
               flex  space-x-2
               px-3 py-2 text-lg sm:text-xl font-bold
-            border-b border-gray-700 sticky top-0 z-50
+            border-b border-yellow-300 sticky top-0 z-50
             "
           >
             <Link href={"/"}>
               <ArrowLeftIcon className="w-7 cursor-pointer" />
             </Link>
 
-            <h1>Tweet</h1>
+            <h1>Posts</h1>
           </div>
 
-          <div className="border-b border-gray-700">
-            <div className="flex space-x-3 p-3 border-gray-700">
+          <div className="border-b border-yellow-300">
+            <div className="flex space-x-3 p-3 border-yellow-300">
               <img
                 className="w-11 h-11 rounded-full object-cover"
                 src={tweetData.photoUrl}
@@ -77,7 +77,7 @@ export default function CommentsPage({ tweetData }) {
 
                 {tweetData.image && (
                   <img
-                    className="object-cover border border-gray-700 rounded-md mt-3 max-h-80"
+                    className="object-cover border border-yellow-300 rounded-md mt-3 max-h-80"
                     src={tweetData.image}
                   />
                 )}
@@ -85,28 +85,28 @@ export default function CommentsPage({ tweetData }) {
             </div>
           </div>
 
-          <div className="flex justify-between items-center border-b border-gray-700 p-2">
+          <div className="flex justify-between items-center border rounded-lg mt-5 mx-2 p-3  border-yellow-300 ">
             <div className="flex justify-center items-center p-1 space-x-2">
               <img
                 className="w-12 h-12 rounded-full object-cover"
                 src={user.photoUrl}
               />
-              <h1 className="text-2xl text-gray-500">Tweet your reply</h1>
+              <h1 className="text-2xl text-gray-500">Post your reply</h1>
             </div>
 
             <button
               disabled={true}
-              className="bg-[#1d9bf0] rounded-full px-4 py-1.5
+              className="bg-yellow-300 text-[#242424] rounded-full px-4 py-1.5
           disabled:opacity-50
           "
             >
-              Tweet
+              Post
             </button>
           </div>
 
           {tweetData.comments?.map((comment) => (
-            <div className="border-b border-gray-700">
-              <div className="flex space-x-3 p-3 border-gray-700">
+            <div className="border border-yellow-300 rounded-xl mx-2 mt-5">
+              <div className="flex space-x-3 p-3 border-yellow-300">
                 <img
                   className="w-11 h-11 rounded-full object-cover"
                   src={comment.photoUrl}

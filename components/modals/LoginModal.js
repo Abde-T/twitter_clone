@@ -27,8 +27,8 @@ export default function LoginModal() {
   return (
     <>
       <button
-        className="bg-transparent border border-white text-white
-        w-[160px] rounded-full h-[40px] hover:bg-[#cbd2d7]
+        className="bg-transparent border text-[#242424] border-[#242424] 
+        w-[160px] rounded-full h-[40px] hover:bg-[#242424] hover:text-white hover:border-white
         "
         onClick={() => dispatch(openLoginModal())}
       >
@@ -46,7 +46,7 @@ export default function LoginModal() {
         "
         >
           <div className="w-[90%] mt-8 flex flex-col">
-            <h1 className="mt-4 font-bold text-4xl">Sign in to your account</h1>
+            <h1 className="mt-4 font-bold text-4xl text-yellow-300">Sign in to your account</h1>
             <input
               placeholder="Email"
               className="h-10 mt-8 rounded-md bg-transparent border border-gray-700 p-6"
@@ -61,7 +61,7 @@ export default function LoginModal() {
             />
 
             <button
-              className="bg-white text-black w-full font-bold
+              className="bg-yellow-300 text-black w-full font-bold
                 text-lg p-2 mt-8 rounded-md
                 "
                 onClick={handleSignIn}
@@ -71,7 +71,7 @@ export default function LoginModal() {
 
             <h1 className="text-center mt-8 font-bold text-lg">or</h1>
             <button
-              className="bg-white text-black w-full font-bold
+              className="bg-yellow-300 text-black w-full font-bold
                 text-lg p-2 rounded-md mt-4
                 "
                 onClick={handleGuestSignIn}
