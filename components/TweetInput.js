@@ -72,7 +72,7 @@ export default function TweetInput() {
   }
 
   return (
-    <div className="flex space-x-3 p-3 border-b py-8 border-slate-100">
+    <div className="flex space-x-3 p-3 border-b py-8 border-slate-100 max-[400px]:w-[100%]">
       <img
         className="w-11 h-11 rounded-full object-cover select-none"
         src={user.photoUrl || "/assets/logo.png"}

@@ -43,7 +43,7 @@ export default function Navbar() {
             className="
             bottom-24
             bg-opacity-1 rounded-full cursor-pointer
-            xl:p-3 flex justify-center items-center   space-x-3"
+            xl:p-3 flex justify-center items-center space-x-3"
             >
               <img
                 className=" w-12 h-12 rounded-full border-slate-100 border-[2px]
